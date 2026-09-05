@@ -267,27 +267,7 @@ python3 tests/test_p0_invariants.py
 
 The checks cover critical time-synchronization parameters, covariance handling, robust loss use, marginalization ownership, and launch-file consistency. They complement, rather than replace, a full ROS build and real-bag evaluation.
 
-## Known limitations
 
-- The estimator retains the original two-frame sliding-window structure.
-- Point-wise deskewing uses a scan-level motion model rather than a full continuous-time trajectory.
-- Dynamic-object handling is geometric foreground filtering, not multi-object tracking.
-- The map backend uses PCL KD-trees and is not an incremental ikd-tree or voxel-hash implementation.
-- Accuracy and runtime depend strongly on calibration, timestamps, mounting vibration, environment geometry, and sensor configuration.
-
-## Repository layout
-
-```text
-ForgeLIO/
-|-- config/       Sensor-specific feature and segmentation settings
-|-- doc/          Architecture and derivation documents
-|-- include/      Estimator, mapping, feature, segmentation, and utility headers
-|-- launch/       Horizon, HAP, and Mid-360 launch files
-|-- rviz_cfg/     Default RViz configuration
-|-- src/lio/      LiDAR-inertial frontend, optimizer, and map manager
-|-- src/segment/  Ground correction and foreground segmentation
-`-- tests/        Source-level invariant tests
-```
 
 ## Acknowledgements
 
