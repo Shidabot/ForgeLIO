@@ -309,7 +309,4 @@ The upstream project also acknowledges the following work:
 
 ForgeLIO is distributed under the BSD 3-Clause license. See [LICENSE](LICENSE). The 2026 ForgeLIO modification notice does not remove or replace the upstream Livox copyright.
 
-## Contact
 
-**Shida**  
-[shida.86@outlook.com](mailto:shida.86@outlook.com)
